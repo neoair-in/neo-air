@@ -1,7 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produit - NEO'AIR</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+background:rgba(5,8,22,0.85);
+backdrop-filter:blur(20px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#00FFD5;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00FFD5;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:85px;
+margin-bottom:20px;
+animation:fadeIn 1s ease;
+}
+
+.hero p{
+font-size:22px;
+max-width:900px;
+color:#a0abc7;
+animation:fadeIn 1.5s ease;
+}
+
+.section{
+padding:120px 10%;
+}
+
+.title{
+font-size:50px;
+margin-bottom:30px;
+color:#00FFD5;
+}
+
+.text{
+font-size:20px;
+line-height:1.8;
+color:#b5c0dc;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:#0d1328;
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,255,213,.25);
+border-color:#00FFD5;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00FFD5;
+}
+
+.card p{
+color:#b5c0dc;
+}
+
+.product-showcase{
+margin-top:50px;
+padding:60px;
+border-radius:30px;
+background:#0d1328;
+border:1px solid rgba(255,255,255,.08);
+text-align:center;
+}
+
+.product-placeholder{
+height:400px;
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+font-weight:700;
+background:linear-gradient(135deg,#00FFD510,#00BFFF20);
+border:1px solid #00FFD540;
+}
+
+.glow{
+position:fixed;
+width:600px;
+height:600px;
+background:#00FFD5;
+filter:blur(280px);
+opacity:.08;
+top:50px;
+left:50%;
+transform:translateX(-50%);
+z-index:-1;
+}
+
+footer{
+padding:60px;
+text-align:center;
+color:#8f9ab5;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
 <body>
 
+<div class="glow"></div>
+
 <nav>
+
 <div class="logo">NEO'AIR</div>
+
 <ul>
 <li><a href="index.html">Accueil</a></li>
 <li><a href="about.html">À propos</a></li>
@@ -10,35 +200,62 @@
 <li><a href="roadmap.html">Roadmap</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
-<h1>Le Produit NEO'AIR</h1>
+
+<h1>NEO'AIR</h1>
 
 <p>
-Une nouvelle génération de cigarette électronique pensée autour de l'innovation, du design et de la durabilité.
+Une nouvelle génération de dispositif électronique imaginée autour de la technologie, du design et de la durabilité.
 </p>
+
 </section>
 
 <section class="section">
 
-<h2 class="section-title">Caractéristiques</h2>
+<h2 class="title">Présentation du produit</h2>
+
+<p class="text">
+NEO'AIR est conçu pour proposer une expérience moderne, intuitive et élégante. Notre vision repose sur une conception réutilisable, connectée et pensée pour les usages de demain.
+</p>
+
+<div class="product-showcase">
+
+<div class="product-placeholder">
+Prototype NEO'AIR
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Caractéristiques</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Rechargeable</h3>
-<p>Recharge USB-C rapide et pratique.</p>
+<p>
+Recharge USB-C rapide et pratique.
+</p>
 </div>
 
 <div class="card">
 <h3>Réutilisable</h3>
-<p>Conçue pour durer et limiter les déchets.</p>
+<p>
+Pensé pour durer et limiter les déchets.
+</p>
 </div>
 
 <div class="card">
-<h3>Connectée</h3>
-<p>Application mobile et statistiques utilisateur.</p>
+<h3>Connecté</h3>
+<p>
+Compatible avec l'écosystème NEO'AIR.
+</p>
 </div>
 
 </div>
@@ -47,12 +264,55 @@ Une nouvelle génération de cigarette électronique pensée autour de l'innovat
 
 <section class="section">
 
-<h2 class="section-title">Design Futuriste</h2>
+<h2 class="title">Design</h2>
 
-<p class="about-text">
-NEO'AIR adopte un design moderne inspiré de l'univers technologique, avec plusieurs coloris et une conception premium.
+<p class="text">
+Inspiré des univers technologiques modernes, le design NEO'AIR privilégie la simplicité, l'élégance et l'ergonomie.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Minimaliste</h3>
+<p>
+Lignes épurées et silhouette moderne.
+</p>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<p>
+Matériaux durables et finitions soignées.
+</p>
+</div>
+
+<div class="card">
+<h3>Personnalisable</h3>
+<p>
+Plusieurs coloris et éditions futures.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Écosystème NEO'AIR</h2>
+
+<p class="text">
+Le produit s'intègre dans une vision plus large comprenant application mobile, suivi utilisateur et innovations futures développées par NEO'AIR.
 </p>
 
 </section>
 
+<footer>
+
+© 2026 NEO'AIR — Tous droits réservés
+
+</footer>
+
 </body>
+
+</html>
