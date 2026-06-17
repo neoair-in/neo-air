@@ -1,6 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Technologie - NEO'AIR</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+background:rgba(5,8,22,0.85);
+backdrop-filter:blur(20px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#00FFD5;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00FFD5;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:80px;
+margin-bottom:20px;
+animation:fadeIn 1s ease;
+}
+
+.hero p{
+font-size:22px;
+max-width:800px;
+color:#a0abc7;
+animation:fadeIn 1.5s ease;
+}
+
+.section{
+padding:120px 10%;
+}
+
+.title{
+font-size:50px;
+margin-bottom:30px;
+color:#00FFD5;
+}
+
+.text{
+font-size:20px;
+line-height:1.8;
+color:#b5c0dc;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:#0d1328;
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,255,213,.2);
+border-color:#00FFD5;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00FFD5;
+}
+
+.card p{
+color:#b5c0dc;
+}
+
+.glow{
+position:fixed;
+width:500px;
+height:500px;
+background:#00FFD5;
+filter:blur(250px);
+opacity:.08;
+top:50px;
+left:50%;
+transform:translateX(-50%);
+z-index:-1;
+}
+
+footer{
+padding:60px;
+text-align:center;
+color:#8f9ab5;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
 <body>
 
+<div class="glow"></div>
+
 <nav>
+
 <div class="logo">NEO'AIR</div>
 
 <ul>
@@ -11,35 +179,48 @@
 <li><a href="roadmap.html">Roadmap</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
 
-<h1>Technologie</h1>
+<h1>TECHNOLOGIE</h1>
 
 <p>
-L'innovation au cœur du développement NEO'AIR.
+L'innovation est au cœur de NEO'AIR. Nous imaginons des solutions modernes, durables et connectées pour construire la prochaine génération de dispositifs électroniques.
 </p>
 
 </section>
 
 <section class="section">
+
+<h2 class="title">Matériaux Durables</h2>
+
+<p class="text">
+Notre vision repose sur l'utilisation de matériaux durables et réutilisables afin de limiter l'impact environnemental et améliorer la durée de vie des produits.
+</p>
 
 <div class="cards">
 
 <div class="card">
-<h3>Matériaux</h3>
-<p>Matériaux recyclables et conception durable.</p>
+<h3>Aluminium</h3>
+<p>
+Structure robuste, légère et recyclable.
+</p>
 </div>
 
 <div class="card">
-<h3>Batterie</h3>
-<p>Batterie rechargeable optimisée.</p>
+<h3>Polymères Techniques</h3>
+<p>
+Matériaux modernes conçus pour résister à une utilisation quotidienne.
+</p>
 </div>
 
 <div class="card">
-<h3>Application Mobile</h3>
-<p>Suivi et personnalisation de l'expérience.</p>
+<h3>Réutilisation</h3>
+<p>
+Approche orientée long terme plutôt que produits jetables.
+</p>
 </div>
 
 </div>
@@ -48,12 +229,90 @@ L'innovation au cœur du développement NEO'AIR.
 
 <section class="section">
 
-<h2 class="section-title">Recherche & Développement</h2>
+<h2 class="title">Électronique Intelligente</h2>
 
-<p class="about-text">
-Notre équipe travaille sur des solutions visant à améliorer la durabilité, la technologie embarquée et l'expérience utilisateur.
+<p class="text">
+Nous souhaitons développer une plateforme électronique moderne permettant d'améliorer l'expérience utilisateur et la gestion énergétique.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>USB-C</h3>
+<p>
+Recharge rapide et universelle.
+</p>
+</div>
+
+<div class="card">
+<h3>Batterie Optimisée</h3>
+<p>
+Gestion intelligente de l'autonomie.
+</p>
+</div>
+
+<div class="card">
+<h3>Sécurité</h3>
+<p>
+Systèmes de protection et de contrôle intégrés.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Application Mobile</h2>
+
+<p class="text">
+NEO'AIR prévoit le développement d'une application mobile destinée à accompagner l'utilisateur et enrichir son expérience.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Suivi</h3>
+<p>
+Statistiques et informations personnalisées.
+</p>
+</div>
+
+<div class="card">
+<h3>Personnalisation</h3>
+<p>
+Réglages et préférences utilisateur.
+</p>
+</div>
+
+<div class="card">
+<h3>Connectivité</h3>
+<p>
+Interaction entre le produit et l'application.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Recherche & Développement</h2>
+
+<p class="text">
+La recherche et le développement représentent un pilier fondamental de NEO'AIR. Notre ambition est d'explorer de nouvelles approches technologiques, de nouveaux matériaux et de nouvelles expériences utilisateur afin de construire les produits de demain.
 </p>
 
 </section>
 
+<footer>
+
+© 2026 NEO'AIR — Tous droits réservés
+
+</footer>
+
 </body>
+
+</html>
