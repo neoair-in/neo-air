@@ -20,143 +20,193 @@ font-family:'Inter',sans-serif;
 }
 
 body{
-background:#050816;
+background:#000;
 color:white;
 overflow-x:hidden;
 }
 
+/* NAVBAR */
+
 nav{
 position:fixed;
 top:0;
+left:0;
 width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:25px 10%;
-background:rgba(5,8,22,0.85);
+background:rgba(0,0,0,0.7);
 backdrop-filter:blur(20px);
-z-index:999;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .logo{
-font-size:28px;
+font-size:26px;
 font-weight:800;
-color:#00FFD5;
+letter-spacing:2px;
 }
 
 nav ul{
 display:flex;
-list-style:none;
 gap:30px;
+list-style:none;
 }
 
 nav a{
-color:white;
+color:#aaa;
 text-decoration:none;
 transition:.3s;
 }
 
 nav a:hover{
-color:#00FFD5;
+color:white;
 }
+
+/* HERO */
 
 .hero{
 height:100vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
 }
 
+.hero-content{
+max-width:1000px;
+}
+
 .hero h1{
-font-size:80px;
+font-size:95px;
+font-weight:800;
+line-height:1;
+letter-spacing:-3px;
 margin-bottom:20px;
-animation:fadeIn 1s ease;
 }
 
 .hero p{
 font-size:22px;
-max-width:800px;
-color:#a0abc7;
-animation:fadeIn 1.5s ease;
+color:#999;
+line-height:1.8;
 }
+
+/* SECTIONS */
 
 .section{
 padding:120px 10%;
 }
 
-.title{
-font-size:50px;
-margin-bottom:30px;
-color:#00FFD5;
+.section-title{
+font-size:55px;
+text-align:center;
+margin-bottom:60px;
+letter-spacing:-2px;
 }
 
-.text{
+.about-text{
+max-width:1000px;
+margin:auto;
+text-align:center;
 font-size:20px;
-line-height:1.8;
-color:#b5c0dc;
+line-height:1.9;
+color:#aaa;
 }
+
+/* IMAGE */
+
+.schema{
+width:100%;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+margin-top:40px;
+}
+
+/* CARDS */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
-margin-top:50px;
+margin-top:60px;
 }
 
 .card{
-background:#0d1328;
-padding:35px;
-border-radius:25px;
+background:rgba(255,255,255,.03);
 border:1px solid rgba(255,255,255,.08);
+padding:35px;
+border-radius:20px;
 transition:.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 30px rgba(0,255,213,.2);
-border-color:#00FFD5;
+border-color:white;
 }
 
 .card h3{
 margin-bottom:15px;
-color:#00FFD5;
+font-size:24px;
 }
 
 .card p{
-color:#b5c0dc;
+color:#aaa;
+line-height:1.8;
 }
 
-.glow{
-position:fixed;
-width:500px;
-height:500px;
-background:#00FFD5;
-filter:blur(250px);
-opacity:.08;
-top:50px;
-left:50%;
-transform:translateX(-50%);
-z-index:-1;
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:60px;
 }
+
+.stat{
+text-align:center;
+padding:40px;
+border:1px solid rgba(255,255,255,.08);
+border-radius:20px;
+background:rgba(255,255,255,.03);
+}
+
+.stat h2{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.stat p{
+color:#999;
+}
+
+/* QUOTE */
+
+.quote{
+padding:180px 10%;
+text-align:center;
+}
+
+.quote h1{
+font-size:90px;
+line-height:1;
+letter-spacing:-3px;
+opacity:.8;
+}
+
+/* FOOTER */
 
 footer{
-padding:60px;
+padding:80px;
 text-align:center;
-color:#8f9ab5;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+footer p{
+margin-top:15px;
+color:#777;
 }
 
 </style>
@@ -164,8 +214,6 @@ transform:translateY(0);
 </head>
 
 <body>
-
-<div class="glow"></div>
 
 <nav>
 
@@ -184,42 +232,67 @@ transform:translateY(0);
 
 <section class="hero">
 
-<h1>TECHNOLOGIE</h1>
+<div class="hero-content">
+
+<h1>ENGINEERED FOR THE FUTURE</h1>
 
 <p>
-L'innovation est au cœur de NEO'AIR. Nous imaginons des solutions modernes, durables et connectées pour construire la prochaine génération de dispositifs électroniques.
+La technologie constitue le cœur de NEO'AIR. Chaque composant, chaque fonction et chaque détail du produit sont pensés pour offrir une expérience moderne, durable et tournée vers l'avenir.
 </p>
+
+</div>
 
 </section>
 
 <section class="section">
 
-<h2 class="title">Matériaux Durables</h2>
+<h2 class="section-title">
+NEO'AIR V1
+</h2>
 
-<p class="text">
-Notre vision repose sur l'utilisation de matériaux durables et réutilisables afin de limiter l'impact environnemental et améliorer la durée de vie des produits.
+<p class="about-text">
+
+Le prototype NEO'AIR V1 représente la première étape de notre vision. Il combine électronique embarquée, architecture modulaire, recharge USB-C et conception industrielle moderne.
+
 </p>
+
+<img src="assets/schema-neoair.png" class="schema">
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Architecture du système
+</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Aluminium</h3>
+<h3>Capteur respiratoire</h3>
 <p>
-Structure robuste, légère et recyclable.
+Détection automatique de l'inhalation pour assurer une activation intelligente du dispositif.
 </p>
 </div>
 
 <div class="card">
-<h3>Polymères Techniques</h3>
+<h3>Module électronique</h3>
 <p>
-Matériaux modernes conçus pour résister à une utilisation quotidienne.
+Microcontrôleur assurant la gestion de l'alimentation, des capteurs et des différents modes de fonctionnement.
 </p>
 </div>
 
 <div class="card">
-<h3>Réutilisation</h3>
+<h3>Batterie rechargeable</h3>
 <p>
-Approche orientée long terme plutôt que produits jetables.
+Batterie lithium-ion rechargeable via USB-C avec autonomie optimisée.
+</p>
+</div>
+
+<div class="card">
+<h3>Interface utilisateur</h3>
+<p>
+Système LED permettant d'afficher les informations essentielles du produit.
 </p>
 </div>
 
@@ -229,33 +302,30 @@ Approche orientée long terme plutôt que produits jetables.
 
 <section class="section">
 
-<h2 class="title">Électronique Intelligente</h2>
+<h2 class="section-title">
+Spécifications clés
+</h2>
 
-<p class="text">
-Nous souhaitons développer une plateforme électronique moderne permettant d'améliorer l'expérience utilisateur et la gestion énergétique.
-</p>
+<div class="stats">
 
-<div class="cards">
-
-<div class="card">
-<h3>USB-C</h3>
-<p>
-Recharge rapide et universelle.
-</p>
+<div class="stat">
+<h2>120</h2>
+<p>Millimètres</p>
 </div>
 
-<div class="card">
-<h3>Batterie Optimisée</h3>
-<p>
-Gestion intelligente de l'autonomie.
-</p>
+<div class="stat">
+<h2>25</h2>
+<p>Millimètres de diamètre</p>
 </div>
 
-<div class="card">
-<h3>Sécurité</h3>
-<p>
-Systèmes de protection et de contrôle intégrés.
-</p>
+<div class="stat">
+<h2>USB-C</h2>
+<p>Recharge rapide</p>
+</div>
+
+<div class="stat">
+<h2>V1</h2>
+<p>Première génération</p>
 </div>
 
 </div>
@@ -264,52 +334,41 @@ Systèmes de protection et de contrôle intégrés.
 
 <section class="section">
 
-<h2 class="title">Application Mobile</h2>
+<h2 class="section-title">
+Recherche & Développement
+</h2>
 
-<p class="text">
-NEO'AIR prévoit le développement d'une application mobile destinée à accompagner l'utilisateur et enrichir son expérience.
+<p class="about-text">
+
+Chez NEO'AIR, nous considérons la recherche et le développement comme un pilier fondamental. Notre objectif est d'explorer de nouveaux matériaux, de nouvelles architectures électroniques et de nouvelles expériences utilisateur afin de construire les produits de demain.
+
+L'innovation est au cœur de notre démarche et guide chacune des étapes de développement de nos futurs produits.
+
 </p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Suivi</h3>
-<p>
-Statistiques et informations personnalisées.
-</p>
-</div>
-
-<div class="card">
-<h3>Personnalisation</h3>
-<p>
-Réglages et préférences utilisateur.
-</p>
-</div>
-
-<div class="card">
-<h3>Connectivité</h3>
-<p>
-Interaction entre le produit et l'application.
-</p>
-</div>
-
-</div>
 
 </section>
 
-<section class="section">
+<section class="quote">
 
-<h2 class="title">Recherche & Développement</h2>
-
-<p class="text">
-La recherche et le développement représentent un pilier fondamental de NEO'AIR. Notre ambition est d'explorer de nouvelles approches technologiques, de nouveaux matériaux et de nouvelles expériences utilisateur afin de construire les produits de demain.
-</p>
+<h1>
+TECHNOLOGY.<br>
+DESIGN.<br>
+VISION.
+</h1>
 
 </section>
 
 <footer>
 
-© 2026 NEO'AIR — Tous droits réservés
+<h2>NEO'AIR</h2>
+
+<p>
+Building Tomorrow's Experience.
+</p>
+
+<p>
+© 2026 NEO'AIR
+</p>
 
 </footer>
 
