@@ -20,164 +20,163 @@ font-family:'Inter',sans-serif;
 }
 
 body{
-background:#050816;
-color:white;
+background:#000;
+color:#fff;
 overflow-x:hidden;
 }
 
 nav{
 position:fixed;
 top:0;
+left:0;
 width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:25px 10%;
-background:rgba(5,8,22,0.85);
+background:rgba(0,0,0,.7);
 backdrop-filter:blur(20px);
-z-index:999;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .logo{
-font-size:28px;
+font-size:26px;
 font-weight:800;
-color:#00FFD5;
+letter-spacing:2px;
 }
 
 nav ul{
 display:flex;
-list-style:none;
 gap:30px;
+list-style:none;
 }
 
 nav a{
-color:white;
+color:#aaa;
 text-decoration:none;
 transition:.3s;
 }
 
 nav a:hover{
-color:#00FFD5;
+color:#fff;
 }
 
 .hero{
 height:100vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
 }
 
+.hero-content{
+max-width:1100px;
+}
+
 .hero h1{
-font-size:85px;
+font-size:110px;
+font-weight:800;
+line-height:1;
+letter-spacing:-4px;
 margin-bottom:20px;
-animation:fadeIn 1s ease;
 }
 
 .hero p{
 font-size:22px;
-max-width:900px;
-color:#a0abc7;
-animation:fadeIn 1.5s ease;
+color:#999;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:16px 40px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:black;
 }
 
 .section{
 padding:120px 10%;
 }
 
-.title{
-font-size:50px;
-margin-bottom:30px;
-color:#00FFD5;
+.section-title{
+font-size:55px;
+text-align:center;
+margin-bottom:60px;
+letter-spacing:-2px;
 }
 
-.text{
+.about-text{
+max-width:1000px;
+margin:auto;
+text-align:center;
 font-size:20px;
-line-height:1.8;
-color:#b5c0dc;
+line-height:1.9;
+color:#aaa;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
-margin-top:50px;
+margin-top:60px;
 }
 
 .card{
-background:#0d1328;
-padding:35px;
-border-radius:25px;
+background:rgba(255,255,255,.03);
 border:1px solid rgba(255,255,255,.08);
+padding:40px;
+border-radius:20px;
 transition:.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 30px rgba(0,255,213,.25);
-border-color:#00FFD5;
+border-color:white;
 }
 
 .card h3{
 margin-bottom:15px;
-color:#00FFD5;
+font-size:24px;
 }
 
 .card p{
-color:#b5c0dc;
+color:#aaa;
+line-height:1.8;
 }
 
-.product-showcase{
-margin-top:50px;
-padding:60px;
-border-radius:30px;
-background:#0d1328;
-border:1px solid rgba(255,255,255,.08);
+.quote{
+padding:180px 10%;
 text-align:center;
 }
 
-.product-placeholder{
-height:400px;
-border-radius:20px;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:28px;
-font-weight:700;
-background:linear-gradient(135deg,#00FFD510,#00BFFF20);
-border:1px solid #00FFD540;
-}
-
-.glow{
-position:fixed;
-width:600px;
-height:600px;
-background:#00FFD5;
-filter:blur(280px);
-opacity:.08;
-top:50px;
-left:50%;
-transform:translateX(-50%);
-z-index:-1;
+.quote h1{
+font-size:90px;
+line-height:1;
+letter-spacing:-3px;
+opacity:.85;
 }
 
 footer{
-padding:60px;
+padding:80px;
 text-align:center;
-color:#8f9ab5;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+footer p{
+margin-top:15px;
+color:#777;
 }
 
 </style>
@@ -185,8 +184,6 @@ transform:translateY(0);
 </head>
 
 <body>
-
-<div class="glow"></div>
 
 <nav>
 
@@ -205,57 +202,101 @@ transform:translateY(0);
 
 <section class="hero">
 
-<h1>NEO'AIR</h1>
+<div class="hero-content">
+
+<h1>INTRODUCING NEO'AIR</h1>
 
 <p>
-Une nouvelle génération de dispositif électronique imaginée autour de la technologie, du design et de la durabilité.
+
+Pensé pour aujourd'hui.
+Conçu pour demain.
+
+Une nouvelle vision du produit technologique moderne,
+alliant design, innovation et expérience utilisateur.
+
+</p>
+
+<a href="#vision" class="btn">
+Explorer
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="vision">
+
+<h2 class="section-title">
+Une Nouvelle Vision
+</h2>
+
+<p class="about-text">
+
+NEO'AIR est né d'une ambition simple :
+imaginer une nouvelle génération de produits capables d'allier design premium, innovation technologique et vision durable.
+
+Notre objectif n'est pas seulement de développer un produit, mais de construire une expérience complète pensée pour les utilisateurs de demain.
+
+Chaque détail, chaque fonctionnalité et chaque choix de conception sont guidés par une volonté d'excellence et d'amélioration continue.
+
 </p>
 
 </section>
 
 <section class="section">
 
-<h2 class="title">Présentation du produit</h2>
-
-<p class="text">
-NEO'AIR est conçu pour proposer une expérience moderne, intuitive et élégante. Notre vision repose sur une conception réutilisable, connectée et pensée pour les usages de demain.
-</p>
-
-<div class="product-showcase">
-
-<div class="product-placeholder">
-Prototype NEO'AIR
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="title">Caractéristiques</h2>
+<h2 class="section-title">
+Les Piliers du Produit
+</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Rechargeable</h3>
+
+<h3>Design</h3>
+
 <p>
-Recharge USB-C rapide et pratique.
+
+Des lignes minimalistes inspirées des plus grandes entreprises technologiques afin de proposer une expérience visuelle moderne et intemporelle.
+
 </p>
+
 </div>
 
 <div class="card">
-<h3>Réutilisable</h3>
+
+<h3>Technologie</h3>
+
 <p>
-Pensé pour durer et limiter les déchets.
+
+Une architecture pensée pour intégrer les innovations futures et accompagner l'évolution des usages.
+
 </p>
+
 </div>
 
 <div class="card">
-<h3>Connecté</h3>
+
+<h3>Connectivité</h3>
+
 <p>
-Compatible avec l'écosystème NEO'AIR.
+
+Développement progressif d'un écosystème capable d'interagir avec les différents services et applications NEO'AIR.
+
 </p>
+
+</div>
+
+<div class="card">
+
+<h3>Durabilité</h3>
+
+<p>
+
+Approche centrée sur la réutilisation, la longévité du produit et la réduction des déchets.
+
+</p>
+
 </div>
 
 </div>
@@ -264,33 +305,46 @@ Compatible avec l'écosystème NEO'AIR.
 
 <section class="section">
 
-<h2 class="title">Design</h2>
-
-<p class="text">
-Inspiré des univers technologiques modernes, le design NEO'AIR privilégie la simplicité, l'élégance et l'ergonomie.
-</p>
+<h2 class="section-title">
+Pourquoi NEO'AIR ?
+</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Minimaliste</h3>
+
+<h3>Moderne</h3>
+
 <p>
-Lignes épurées et silhouette moderne.
+
+Conçu pour répondre aux attentes d'une nouvelle génération d'utilisateurs.
+
 </p>
+
 </div>
 
 <div class="card">
-<h3>Premium</h3>
+
+<h3>Intelligent</h3>
+
 <p>
-Matériaux durables et finitions soignées.
+
+Pensé pour évoluer grâce à l'innovation et à l'amélioration continue.
+
 </p>
+
 </div>
 
 <div class="card">
-<h3>Personnalisable</h3>
+
+<h3>Visionnaire</h3>
+
 <p>
-Plusieurs coloris et éditions futures.
+
+Développé avec une vision long terme et une ambition internationale.
+
 </p>
+
 </div>
 
 </div>
@@ -299,17 +353,45 @@ Plusieurs coloris et éditions futures.
 
 <section class="section">
 
-<h2 class="title">Écosystème NEO'AIR</h2>
+<h2 class="section-title">
+L'Écosystème NEO'AIR
+</h2>
 
-<p class="text">
-Le produit s'intègre dans une vision plus large comprenant application mobile, suivi utilisateur et innovations futures développées par NEO'AIR.
+<p class="about-text">
+
+Notre vision dépasse largement le cadre d'un simple produit.
+
+NEO'AIR ambitionne de construire un véritable écosystème composé de technologies, d'applications et de services capables de fonctionner ensemble afin d'offrir une expérience cohérente et moderne.
+
+Chaque innovation future viendra renforcer cette vision globale.
+
 </p>
+
+</section>
+
+<section class="quote">
+
+<h1>
+
+DESIGNED FOR THE FUTURE.<br>
+
+BUILT FOR THE NEXT GENERATION.
+
+</h1>
 
 </section>
 
 <footer>
 
-© 2026 NEO'AIR — Tous droits réservés
+<h2>NEO'AIR</h2>
+
+<p>
+Building Tomorrow's Experience.
+</p>
+
+<p>
+© 2026 NEO'AIR
+</p>
 
 </footer>
 
